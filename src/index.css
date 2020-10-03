@@ -1,0 +1,29 @@
+html, body {
+  /*overflow-x: hidden;*/
+  width: 100vw;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: #323c41;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+section {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
