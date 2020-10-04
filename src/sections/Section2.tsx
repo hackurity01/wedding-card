@@ -17,11 +17,11 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             top: '50%',
             left: '42%',
             transformOrigin: 'center bottom',
-            opacity: computedValueWithKeyframe(scrollTop, 1400, 900, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            opacity: computedValueWithKeyframe(scrollTop, 1400, 1500, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
             transform: `translate(-50%, -50%) rotate(-${computedValueWithKeyframe(
               scrollTop,
               1400,
-              900,
+              1500,
               {
                 0: 3,
                 100: 4.5,
@@ -30,7 +30,7 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             )}deg) scale(${computedValueWithKeyframe(
               scrollTop,
               1400,
-              900,
+              1500,
               {
                 0: 1,
                 100: 1.03,
@@ -48,11 +48,11 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             top: '48%',
             left: '50%',
             transformOrigin: 'center bottom',
-            opacity: computedValueWithKeyframe(scrollTop, 1700, 700, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            opacity: computedValueWithKeyframe(scrollTop, 1900, 1100, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
             transform: `translate(-50%, -50%) rotate(-${computedValueWithKeyframe(
               scrollTop,
-              1700,
-              700,
+              1900,
+              1100,
               {
                 0: 0.5,
                 100: 1,
@@ -60,8 +60,8 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
               'easeInOutQuad'
             )}deg) scale(${computedValueWithKeyframe(
               scrollTop,
-              1700,
-              700,
+              1900,
+              1100,
               {
                 0: 1,
                 100: 1.03,
@@ -79,11 +79,11 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             top: '47%',
             left: '57%',
             transformOrigin: 'center bottom',
-            opacity: computedValueWithKeyframe(scrollTop, 2000, 500, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            opacity: computedValueWithKeyframe(scrollTop, 2500, 700, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
             transform: `translate(-${computedValueWithKeyframe(
               scrollTop,
-              2000,
-              500,
+              2500,
+              700,
               {
                 0: 50,
                 100: 49,
@@ -91,8 +91,8 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
               'easeInOutQuad'
             )}%, -50%) rotate(${computedValueWithKeyframe(
               scrollTop,
-              2000,
-              500,
+              2500,
+              700,
               {
                 0: 2.5,
                 100: 3,
@@ -119,7 +119,7 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             left: '50%',
             width: '100%',
             transform: 'translate(-50%, -50%)',
-            opacity: computedValueWithKeyframe(scrollTop, 1550, 400, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            opacity: computedValueWithKeyframe(scrollTop, 1500, 800, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
           }}>
           <Text text={'열심히 사랑했고,'} />
         </div>
@@ -130,7 +130,7 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
             left: '50%',
             width: '100%',
             transform: 'translate(-50%, -50%)',
-            opacity: computedValueWithKeyframe(scrollTop, 2000, 450, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            opacity: computedValueWithKeyframe(scrollTop, 2300, 800, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
           }}>
           <Text text={'행복했습니다'} />
         </div>

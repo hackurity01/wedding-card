@@ -10,7 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8d04b99-9750-4b0a-bbc2-267251288134" name="Default Changelist" comment="" />
+    <list default="true" id="d8d04b99-9750-4b0a-bbc2-267251288134" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/imgs/IMG_0077.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sections/Section3.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sections/Section4.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sections/Section5.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Section2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section2.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +59,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/sections" />
-      <recent name="$PROJECT_DIR$/src/assets/fonts" />
       <recent name="$PROJECT_DIR$/src/assets/imgs" />
+      <recent name="$PROJECT_DIR$/src/assets/fonts" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -67,7 +75,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601700451943</updated>
       <workItem from="1601700456845" duration="15647000" />
-      <workItem from="1601727856597" duration="11649000" />
+      <workItem from="1601727856597" duration="13819000" />
+      <workItem from="1601822654520" duration="451000" />
     </task>
     <servers />
   </component>
