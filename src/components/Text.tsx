@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
 interface TextProps {
-  text: string;
+  text: ReactNode;
   color?: string;
   style?: any;
   className?: string;
@@ -16,6 +16,7 @@ export function Text({ text, color = '#fff', style = {}, className }: TextProps)
   );
 }
 
-const TextWrapper = styled.div<{ color: string }>`
+const TextWrapper = styled.span<{ color: string }>`
   color: ${({ color }) => color};
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8);
 `;

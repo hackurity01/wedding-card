@@ -10,9 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: #323c41;
-  font-family: 'East Sea Dokdo', cursive;
-  font-size: 30px;
+  background: #283034;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 20px;
 }
 
 code {

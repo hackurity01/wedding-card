@@ -1,6 +1,6 @@
 import React from 'react';
 
-import IMG_0077 from 'src/assets/imgs/IMG_0077.jpg';
+import IMG_6605 from 'src/assets/imgs/section3/IMG_6605.jpg';
 import { Img } from 'src/components/Img';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
@@ -12,6 +12,7 @@ export function Section3({ scrollTop }: { scrollTop: number }) {
         <div
           style={{
             position: 'fixed',
+            zIndex: -1,
             top: '10%',
             left: '50%',
             width: '100%',
@@ -25,17 +26,19 @@ export function Section3({ scrollTop }: { scrollTop: number }) {
           style={{
             width: '95%',
             position: 'fixed',
+            zIndex: -1,
             top: '50%',
             left: '50%',
             transformOrigin: 'center',
             opacity: computedValueWithKeyframe(scrollTop, 3700, 1050, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
             transform: `translate(-50%, -50%)`,
           }}>
-          <Img src={IMG_0077} alt="" width={'100%'} />
+          <Img src={IMG_6605} alt="" width={'100%'} />
         </div>
         <div
           style={{
             position: 'fixed',
+            zIndex: -1,
             bottom: '10%',
             left: '50%',
             width: '100%',

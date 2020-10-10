@@ -1,0 +1,134 @@
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+
+import mainImg from 'src/assets/imgs/main.jpg';
+
+export function SectionCard({ winHeight }: { winHeight: number }) {
+  return (
+    <SectionCardWrapper height={winHeight}>
+      <CardWrapper>
+        <NameAndDate>
+          <Name>유동균</Name>
+          <Date>
+            <div>11</div>
+            <div>28</div>
+          </Date>
+          <Name>이한주</Name>
+        </NameAndDate>
+        <ImgCard>
+          <img src={mainImg} alt="웨딩 사진" />
+        </ImgCard>
+        <Desc>
+          <div>2020년 11월 28일 토요일 오후 1시 30분</div>
+          <div>모나무르 아레나홀</div>
+        </Desc>
+      </CardWrapper>
+      <ScrollIndicator>
+        <div>스토리 보러 가기</div>
+        <DownImgWrapper>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5Ij4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIvPgogICAgPC9nPgo8L3N2Zz4="
+            alt={'down'}
+          />
+        </DownImgWrapper>
+      </ScrollIndicator>
+      <GradientEnd />
+    </SectionCardWrapper>
+  );
+}
+
+const SectionCardWrapper = styled.div<{ height: number }>`
+  text-align: left;
+  background: #fff;
+  height: ${({ height }) => height}px;
+  position: relative;
+  color: #333;
+`;
+
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+`;
+const NameAndDate = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 25px;
+  box-sizing: border-box;
+`;
+const Name = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+`;
+const Date = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+
+  & div:first-child {
+    border-bottom: 1px solid #333;
+  }
+  & div {
+    padding: 5px;
+  }
+`;
+const ImgCard = styled.div`
+  padding: 5px 25px;
+
+  & img {
+    width: 100%;
+  }
+`;
+const Desc = styled.div`
+  font-size: 0.75em;
+  line-height: 1.4rem;
+  padding-top: 10px;
+
+  & div {
+    white-space: nowrap;
+    text-align: center;
+  }
+`;
+const ScrollIndicator = styled.div`
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+
+  & div {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+  }
+
+  & img {
+    width: 25px;
+    height: auto;
+    transform: rotate(90deg);
+    opacity: 0.7;
+  }
+`;
+const DownAnimation = keyframes`
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+`;
+const DownImgWrapper = styled.div`
+  animation: ${DownAnimation} 1.5s ease infinite;
+`;
+const GradientEnd = styled.div`
+  position: absolute;
+  top: 100%;
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+`;

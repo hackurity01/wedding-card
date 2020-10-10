@@ -4,4 +4,4 @@ declare module '*.jpg' {
   export = value;
 }
 
-declare module 'react-plx';
+declare module 'react-photoswipe';

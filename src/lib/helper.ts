@@ -62,4 +62,5 @@ export const EasingFunctions: any = {
   easeOutQuint: (t: number) => 1 + --t * t * t * t * t,
   // acceleration until halfway, then deceleration
   easeInOutQuint: (t: number) => (t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t),
+  intFloor: (t: number) => Math.floor(t),
 };

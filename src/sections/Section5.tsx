@@ -1,8 +1,10 @@
 import React from 'react';
 
-import IMG_0077 from 'src/assets/imgs/IMG_0077.jpg';
+import _DSC1037 from 'src/assets/imgs/section5/_DSC1037.jpg';
+import IMG_8576 from 'src/assets/imgs/section5/IMG_8576.jpg';
 import { Img } from 'src/components/Img';
 import { computedValueWithKeyframe } from 'src/lib/helper';
+import { Text } from 'src/components/Text';
 
 export function Section5({ scrollTop }: { scrollTop: number }) {
   return (
@@ -13,23 +15,39 @@ export function Section5({ scrollTop }: { scrollTop: number }) {
           style={{
             width: '95%',
             position: 'fixed',
-            top: '5%',
+            zIndex: -1,
+            bottom: '60%',
             left: '50%',
             transformOrigin: 'center',
             opacity: computedValueWithKeyframe(scrollTop, 6300, 1400, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
             transform: `translate(-50%, 0)`,
           }}>
-          <Img src={IMG_0077} alt="" width={'100%'} />
+          <Img src={_DSC1037} alt="" width={'100%'} />
+        </div>
+        <div
+          className={'boxShadow'}
+          style={{
+            width: '95%',
+            position: 'fixed',
+            zIndex: -1,
+            bottom: '2.5%',
+            left: '50%',
+            transformOrigin: 'center',
+            opacity: computedValueWithKeyframe(scrollTop, 7300, 800, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            transform: `translate(-50%, 0)`,
+          }}>
+          <Img src={IMG_8576} alt="" width={'100%'} />
         </div>
         <div
           style={{
             position: 'fixed',
-            top: '50%',
+            zIndex: -1,
+            bottom: 'calc(35vw + 30%)',
             left: '50%',
             width: '100%',
-            transform: 'translate(-50%, -50%)',
+            transform: 'translate(-50%, 0)',
           }}>
-          <span
+          <Text
             style={{
               color: 'white',
               opacity: computedValueWithKeyframe(
@@ -39,10 +57,11 @@ export function Section5({ scrollTop }: { scrollTop: number }) {
                 { 0: 0, 35: 1, 65: 1, 100: 0 },
                 'easeInOutQuad'
               ),
-            }}>
-            양보하고&nbsp;&nbsp;
-          </span>
-          <span
+            }}
+            text={<>양보하고&nbsp;&nbsp;</>}
+          />
+
+          <Text
             style={{
               color: 'white',
               opacity: computedValueWithKeyframe(
@@ -52,29 +71,16 @@ export function Section5({ scrollTop }: { scrollTop: number }) {
                 { 0: 0, 35: 1, 65: 1, 100: 0 },
                 'easeInOutQuad'
               ),
-            }}>
-            배려하는 법을&nbsp;&nbsp;
-          </span>
-          <span
+            }}
+            text={<>배려하는 법을&nbsp;&nbsp;</>}
+          />
+          <Text
             style={{
               color: 'white',
               opacity: computedValueWithKeyframe(scrollTop, 7200, 800, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            }}>
-            배웠습니다.
-          </span>
-        </div>
-        <div
-          className={'boxShadow'}
-          style={{
-            width: '95%',
-            position: 'fixed',
-            bottom: '5%',
-            left: '50%',
-            transformOrigin: 'center',
-            opacity: computedValueWithKeyframe(scrollTop, 7300, 800, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            transform: `translate(-50%, 0)`,
-          }}>
-          <Img src={IMG_0077} alt="" width={'100%'} />
+            }}
+            text={<>배웠습니다</>}
+          />
         </div>
       </div>
     </section>
