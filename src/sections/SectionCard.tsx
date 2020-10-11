@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import mainImg from 'src/assets/imgs/main.jpg';
+import mainImg from 'src/assets/imgs/main/main.jpg';
+import mainImgWebp from 'src/assets/imgs/main/main.webp';
 
 export function SectionCard({ winHeight }: { winHeight: number }) {
   return (
@@ -16,11 +17,14 @@ export function SectionCard({ winHeight }: { winHeight: number }) {
           <Name>이한주</Name>
         </NameAndDate>
         <ImgCard>
-          <img src={mainImg} alt="웨딩 사진" />
+          <picture>
+            <source srcSet={mainImgWebp} type="image/webp" />
+            <img src={mainImg} alt="웨딩 사진" />
+          </picture>
         </ImgCard>
         <Desc>
           <div>2020년 11월 28일 토요일 오후 1시 30분</div>
-          <div>모나무르 아레나홀</div>
+          <div>아산 모나무르 아레나홀</div>
         </Desc>
       </CardWrapper>
       <ScrollIndicator>
@@ -48,8 +52,9 @@ const CardWrapper = styled.div<{ height: number }>`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
+  max-width: 500px;
   min-height: ${({ height }) => height - 50}px;
+  margin: auto;
   padding-bottom: 25px;
   box-sizing: border-box;
 `;

@@ -22,23 +22,23 @@ function App() {
   return (
     <div className="App">
       <SectionCard winHeight={winHeight} />
-      {/* 0 ~ 1400 */}
+      {/* 0 ~ 2100 */}
       <Section1 scrollTop={_scrollTop} />
-      {/* 1400 ~ 3200 */}
+      {/* 2100 ~ 3900 */}
       <Section2 scrollTop={_scrollTop} />
-      {/* 3200 ~ 4800 */}
+      {/* 3900 ~ 5500 */}
       <Section3 scrollTop={_scrollTop} />
-      {/* 4800 ~ 6300 */}
+      {/* 5500 ~ 7000 */}
       <Section4 scrollTop={_scrollTop} />
-      {/* 6300 ~ 8100 */}
+      {/* 7000 ~ 8800 */}
       <Section5 scrollTop={_scrollTop} />
-      {/* 8100 ~ 9700 */}
+      {/* 8800 ~ 10400 */}
       <Section6 scrollTop={_scrollTop} />
-      {/* 9700 ~ 13300 */}
+      {/* 10400 ~ 14000 */}
       <Section7 scrollTop={_scrollTop} />
       <div style={{ background: 'white' }}>
-        {/* 13300 ~ */}
-        <SectionPhotos scrollTop={_scrollTop - 12930 + 1200} />
+        {/* 14000 ~ */}
+        <SectionPhotos scrollTop={_scrollTop - 13630 + 1200} />
         <SectionMap />
         <SectionInfomation />
       </div>

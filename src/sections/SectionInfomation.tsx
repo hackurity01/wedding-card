@@ -60,6 +60,8 @@ export function SectionInfomation() {
 const InformationWrapper = styled.div`
   padding: 38px 30px 100px;
   text-align: left;
+  max-width: 500px;
+  margin: auto;
 `;
 const InfoGroup = styled.div`
   margin-bottom: 30px;

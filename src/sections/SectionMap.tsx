@@ -72,7 +72,7 @@ export function SectionMap() {
 
   const { icon, root } = useStyles();
   return (
-    <section style={{ paddingTop: 90 }}>
+    <SectionMapWrapper>
       <Title text={'오시는 길'} />
       <ButtonGroup>
         <Button
@@ -96,9 +96,15 @@ export function SectionMap() {
         </Button>
       </ButtonGroup>
       <div id={'map'} style={{ width: '100%', height: '210px' }} />
-    </section>
+    </SectionMapWrapper>
   );
 }
+
+const SectionMapWrapper = styled.section`
+  max-width: 500px;
+  margin: auto;
+  padding-top: 90px;
+`;
 
 const ButtonGroup = styled.div`
   text-align: right;

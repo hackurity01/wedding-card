@@ -1,86 +1,96 @@
 import React from 'react';
 
-import _DSC1037 from 'src/assets/imgs/section5/_DSC1037.jpg';
-import IMG_8576 from 'src/assets/imgs/section5/IMG_8576.jpg';
-import { Img } from 'src/components/Img';
 import { computedValueWithKeyframe } from 'src/lib/helper';
+import { Picture } from 'src/components/Picture';
 import { Text } from 'src/components/Text';
+
+import _DSC1037 from 'src/assets/imgs/section5/_DSC1037.jpg';
+import _DSC1037_webp from 'src/assets/imgs/section5/_DSC1037.webp';
+import IMG_7516 from 'src/assets/imgs/section5/IMG_7516.jpg';
+import IMG_7516_webp from 'src/assets/imgs/section5/IMG_7516.webp';
 
 export function Section5({ scrollTop }: { scrollTop: number }) {
   return (
     <section>
       <div style={{ height: '1800px' }}>
         <div
-          className={'boxShadow'}
-          style={{
-            width: '95%',
-            position: 'fixed',
-            zIndex: -1,
-            bottom: '60%',
-            left: '50%',
-            transformOrigin: 'center',
-            opacity: computedValueWithKeyframe(scrollTop, 6300, 1400, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            transform: `translate(-50%, 0)`,
-          }}>
-          <Img src={_DSC1037} alt="" width={'100%'} />
-        </div>
-        <div
-          className={'boxShadow'}
-          style={{
-            width: '95%',
-            position: 'fixed',
-            zIndex: -1,
-            bottom: '2.5%',
-            left: '50%',
-            transformOrigin: 'center',
-            opacity: computedValueWithKeyframe(scrollTop, 7300, 800, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            transform: `translate(-50%, 0)`,
-          }}>
-          <Img src={IMG_8576} alt="" width={'100%'} />
-        </div>
-        <div
           style={{
             position: 'fixed',
-            zIndex: -1,
-            bottom: 'calc(35vw + 30%)',
+            top: '50%',
             left: '50%',
+            transform: `translate(-50%, -50%)`,
+            zIndex: -1,
             width: '100%',
-            transform: 'translate(-50%, 0)',
           }}>
-          <Text
+          <div
+            className={'boxShadow'}
             style={{
-              color: 'white',
+              width: '92%',
+              maxWidth: '460px',
               opacity: computedValueWithKeyframe(
                 scrollTop,
-                6400,
+                7000,
                 1400,
-                { 0: 0, 35: 1, 65: 1, 100: 0 },
+                { 0: 0, 30: 1, 65: 1, 100: 0 },
                 'easeInOutQuad'
               ),
-            }}
-            text={<>양보하고&nbsp;&nbsp;</>}
-          />
+              margin: 'auto',
+            }}>
+            <Picture jpg={_DSC1037} webp={_DSC1037_webp} />
+          </div>
 
-          <Text
+          <div style={{ width: '100%', padding: '35px 0' }}>
+            <Text
+              style={{
+                color: 'white',
+                opacity: computedValueWithKeyframe(
+                  scrollTop,
+                  7100,
+                  1400,
+                  { 0: 0, 35: 1, 65: 1, 100: 0 },
+                  'easeInOutQuad'
+                ),
+              }}
+              text={<>가장&nbsp;&nbsp;</>}
+            />
+
+            <Text
+              style={{
+                color: 'white',
+                opacity: computedValueWithKeyframe(
+                  scrollTop,
+                  7400,
+                  1200,
+                  { 0: 0, 35: 1, 65: 1, 100: 0 },
+                  'easeInOutQuad'
+                ),
+              }}
+              text={<>큰 힘이&nbsp;&nbsp;</>}
+            />
+            <Text
+              style={{
+                color: 'white',
+                opacity: computedValueWithKeyframe(
+                  scrollTop,
+                  7900,
+                  800,
+                  { 0: 0, 35: 1, 65: 1, 100: 0 },
+                  'easeInOutQuad'
+                ),
+              }}
+              text={<>되어 주었습니다</>}
+            />
+          </div>
+          <div
+            className={'boxShadow'}
             style={{
-              color: 'white',
-              opacity: computedValueWithKeyframe(
-                scrollTop,
-                6700,
-                1200,
-                { 0: 0, 35: 1, 65: 1, 100: 0 },
-                'easeInOutQuad'
-              ),
-            }}
-            text={<>배려하는 법을&nbsp;&nbsp;</>}
-          />
-          <Text
-            style={{
-              color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 7200, 800, { 0: 0, 35: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            }}
-            text={<>배웠습니다</>}
-          />
+              width: '92%',
+              maxWidth: '460px',
+              opacity: computedValueWithKeyframe(scrollTop, 8000, 800, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+              margin: 'auto',
+            }}>
+            <Picture jpg={IMG_7516} webp={IMG_7516_webp} />
+          </div>
         </div>
       </div>
     </section>

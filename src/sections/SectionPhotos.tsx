@@ -3,15 +3,20 @@ import 'react-photoswipe/lib/photoswipe.css';
 import { PhotoSwipe } from 'react-photoswipe';
 
 import _YY_1183_1x1 from 'src/assets/imgs/photos/_YY_1183_1x1.jpg';
+import _YY_1183_1x1_webp from 'src/assets/imgs/photos/_YY_1183_1x1.webp';
 import _YY_1353_1x1 from 'src/assets/imgs/photos/_YY_1362_1x1.jpg';
+import _YY_1353_1x1_webp from 'src/assets/imgs/photos/_YY_1362_1x1.webp';
 import _YY_1535_1x1 from 'src/assets/imgs/photos/_YY_1535_1x1.jpg';
-import _YY_1700_1x1 from 'src/assets/imgs/photos/_YY_1700_1x1.jpg';
+import _YY_1535_1x1_webp from 'src/assets/imgs/photos/_YY_1535_1x1.webp';
 import _YY_1779_1x1 from 'src/assets/imgs/photos/_YY_1779_1x1.jpg';
+import _YY_1779_1x1_webp from 'src/assets/imgs/photos/_YY_1779_1x1.webp';
 import _YY_1870_1x1 from 'src/assets/imgs/photos/_YY_1870_1x1.jpg';
+import _YY_1870_1x1_webp from 'src/assets/imgs/photos/_YY_1870_1x1.webp';
+import _YY_1566_1x1 from 'src/assets/imgs/photos/_YY_1566_1x1.jpg';
+import _YY_1566_1x1_webp from 'src/assets/imgs/photos/_YY_1566_1x1.webp';
 import _YY_1183 from 'src/assets/imgs/photos/_YY_1183.jpg';
 import _YY_1353 from 'src/assets/imgs/photos/_YY_1362.jpg';
 import _YY_1535 from 'src/assets/imgs/photos/_YY_1535.jpg';
-import _YY_1700 from 'src/assets/imgs/photos/_YY_1700.jpg';
 import _YY_1779 from 'src/assets/imgs/photos/_YY_1779.jpg';
 import _YY_1870 from 'src/assets/imgs/photos/_YY_1870.jpg';
 import _YY_1566 from 'src/assets/imgs/photos/_YY_1566.jpg';
@@ -19,13 +24,25 @@ import _YY_2167 from 'src/assets/imgs/photos/_YY_2167.jpg';
 import styled from 'styled-components';
 import { computedValueWithKeyframe } from 'src/lib/helper';
 import { Title } from 'src/components/Title';
+import { Picture } from 'src/components/Picture';
 
 export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
   const [isGalleryOpened, setIsGalleryOpened] = useState<boolean>(false);
   const [galleryOption, setGalleryOption] = useState<any>({
     closeOnScroll: false,
+    getThumbBoundsFn: () => {
+      return { x: 0, y: window.innerHeight, w: window.innerWidth };
+    },
   });
-  const photos_1x1 = [_YY_1183_1x1, _YY_1353_1x1, _YY_1535_1x1, _YY_1700_1x1, _YY_1779_1x1, _YY_1870_1x1];
+  const photos_1x1 = [_YY_1183_1x1, _YY_1353_1x1, _YY_1535_1x1, _YY_1566_1x1, _YY_1779_1x1, _YY_1870_1x1];
+  const photos_1x1_webp = [
+    _YY_1183_1x1_webp,
+    _YY_1353_1x1_webp,
+    _YY_1535_1x1_webp,
+    _YY_1566_1x1_webp,
+    _YY_1779_1x1_webp,
+    _YY_1870_1x1_webp,
+  ];
 
   let photos = [
     {
@@ -44,9 +61,9 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
       h: 3360,
     },
     {
-      src: _YY_1700,
-      w: 5040,
-      h: 3360,
+      src: _YY_1566,
+      w: 3109,
+      h: 4993,
     },
     {
       src: _YY_1779,
@@ -57,11 +74,6 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
       src: _YY_1870,
       w: 4962,
       h: 3308,
-    },
-    {
-      src: _YY_1566,
-      w: 3109,
-      h: 4993,
     },
     {
       src: _YY_2167,
@@ -79,9 +91,11 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
     <PhotosWrapper>
       <Title text={'우리들의 사진'} />
       <PhotosGrid>
-        <img
-          src={photos_1x1[0]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[0]}
+          webp={photos_1x1_webp[0]}
+          alt={'이미지 0'}
           style={{
             transform: `translate3d(0, ${computedValueWithKeyframe(
               scrollTop,
@@ -94,11 +108,12 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(0);
           }}
-          alt={'이미지 1'}
         />
-        <img
-          src={photos_1x1[1]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[1]}
+          webp={photos_1x1_webp[1]}
+          alt={'이미지 1'}
           style={{
             transform: `translate3d(-6%, -${computedValueWithKeyframe(
               scrollTop,
@@ -111,11 +126,12 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(1);
           }}
-          alt={'이미지 2'}
         />
-        <img
-          src={photos_1x1[2]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[2]}
+          webp={photos_1x1_webp[2]}
+          alt={'이미지 2'}
           style={{
             transform: `translate3d(0, ${computedValueWithKeyframe(
               scrollTop,
@@ -128,11 +144,12 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(2);
           }}
-          alt={'이미지 3'}
         />
-        <img
-          src={photos_1x1[3]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[3]}
+          webp={photos_1x1_webp[3]}
+          alt={'이미지 3'}
           style={{
             transform: `translate3d(-6%, -${computedValueWithKeyframe(
               scrollTop,
@@ -145,11 +162,12 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(3);
           }}
-          alt={'이미지 4'}
         />
-        <img
-          src={photos_1x1[4]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[4]}
+          webp={photos_1x1_webp[4]}
+          alt={'이미지 4'}
           style={{
             transform: `translate3d(0, ${computedValueWithKeyframe(
               scrollTop,
@@ -162,11 +180,12 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(4);
           }}
-          alt={'이미지 5'}
         />
-        <img
-          src={photos_1x1[5]}
+        <Picture
           className={'boxShadow'}
+          jpg={photos_1x1_webp[5]}
+          webp={photos_1x1_webp[5]}
+          alt={'이미지 5'}
           style={{
             transform: `translate3d(-6%, -${computedValueWithKeyframe(
               scrollTop,
@@ -179,15 +198,11 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
           onClick={() => {
             showGallery(5);
           }}
-          alt={'이미지 6'}
         />
       </PhotosGrid>
-      <BtnMore
-        onClick={() => {
-          showGallery(6);
-        }}>
-        사진 더 보기
-      </BtnMore>
+      <div style={{ color: '#666', fontSize: '0.78rem', paddingTop: '20px' }}>
+        *사진을 클릭하시면 크게 볼 수 있어요!
+      </div>
       <PhotoSwipe
         isOpen={isGalleryOpened}
         items={photos}
@@ -202,8 +217,10 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
 
 const PhotosWrapper = styled.section`
   padding: 90px 0;
+  max-width: 500px;
+  margin: auto;
 `;
-const PhotosGrid = styled.section`
+const PhotosGrid = styled.div`
   padding: 105px 20px 0;
   width: 100%;
   display: grid;

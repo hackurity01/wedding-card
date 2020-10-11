@@ -1,9 +1,13 @@
 import React from 'react';
 
-import IMG_5016 from 'src/assets/imgs/section1/IMG_5016.jpg';
-import { Img } from 'src/components/Img';
+import { Picture } from 'src/components/Picture';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
+
+import hanjoo from 'src/assets/imgs/section1/hanjoo.jpg';
+import hanjoo_webp from 'src/assets/imgs/section1/hanjoo.webp';
+import IMG_8972 from 'src/assets/imgs/section1/IMG_8972.jpg';
+import IMG_8972_webp from 'src/assets/imgs/section1/IMG_8972.webp';
 
 export function Section1({ scrollTop }: { scrollTop: number }) {
   return (
@@ -25,50 +29,36 @@ export function Section1({ scrollTop }: { scrollTop: number }) {
         <div
           style={{
             width: '100%',
+            maxWidth: '500px',
             position: 'fixed',
             zIndex: -1,
             top: '50%',
             left: '50%',
             opacity: computedValueWithKeyframe(scrollTop, 700, 700, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
-            transform: `translate(-50%, -50%) scale(${computedValueWithKeyframe(
-              scrollTop,
-              700,
-              700,
-              {
-                0: 1.01,
-                100: 1.07,
-              },
-              'easeInOutQuad'
-            )})`,
+            transform: `translate(-50%, -50%)`,
           }}>
-          <div
-            style={{
-              width: '100%',
-              height: '100%',
-              position: 'absolute',
-              backgroundImage:
-                'linear-gradient(rgb(40, 48, 52) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 70%, rgb(40, 48, 52) 100%)',
-            }}
-          />
-          <Img src={IMG_5016} alt="" width={'100%'} />
+          <Picture jpg={IMG_8972} webp={IMG_8972_webp} />
+          <br />
+          <br />
+          <Text text={'컴퓨터를 좋아하는 남자와'} />
         </div>
+      </div>
+      <div style={{ height: '700px' }}>
         <div
           style={{
+            width: '100%',
+            maxWidth: '500px',
             position: 'fixed',
             zIndex: -1,
-            top: '88%',
+            top: '50%',
             left: '50%',
-            width: '100%',
-            transform: 'translate(-50%, -50%)',
-            opacity: computedValueWithKeyframe(
-              scrollTop,
-              700,
-              700,
-              { 0: 0, 10: 0, 35: 1, 65: 1, 90: 0, 100: 0 },
-              'easeInOutQuad'
-            ),
+            opacity: computedValueWithKeyframe(scrollTop, 1400, 700, { 0: 0, 30: 1, 65: 1, 100: 0 }, 'easeInOutQuad'),
+            transform: `translate(-50%, -50%)`,
           }}>
-          <Text text={'서로 다른 두 사람이 만났습니다.'} />
+          <Picture jpg={hanjoo} webp={hanjoo_webp} />
+          <br />
+          <br />
+          <Text text={'영어를 좋아하는 여자가 만났습니다.'} />
         </div>
       </div>
     </section>

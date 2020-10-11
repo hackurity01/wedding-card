@@ -13,13 +13,13 @@ export function Section7({ scrollTop }: { scrollTop: number }) {
             zIndex: -1,
             top: '50%',
             width: '100%',
-            marginBottom: '400px',
+            marginBottom: '60px',
             transform: 'translate(0, -50%)',
           }}>
           <div
             style={{
               color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 9700, 2000, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+              opacity: computedValueWithKeyframe(scrollTop, 10400, 2000, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
               marginBottom: 15,
             }}>
             힘든 시기지만
@@ -27,23 +27,23 @@ export function Section7({ scrollTop }: { scrollTop: number }) {
           <div
             style={{
               color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 10000, 1600, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+              opacity: computedValueWithKeyframe(scrollTop, 10700, 1600, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
               marginBottom: 15,
             }}>
-            작은 축복을
+            작은 축복을 보태어 주시면
           </div>
           <div
             style={{
               color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 10300, 1200, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+              opacity: computedValueWithKeyframe(scrollTop, 11000, 1200, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
               marginBottom: 15,
             }}>
-            보태어 주시기 바랍니다
+            더없는 행복으로 간직하겠습니다
           </div>
 
           <div
             style={{
-              opacity: computedValueWithKeyframe(scrollTop, 10600, 800, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+              opacity: computedValueWithKeyframe(scrollTop, 11300, 800, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
               marginBottom: 15,
             }}>
             <ShortHr />
