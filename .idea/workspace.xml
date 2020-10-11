@@ -11,57 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d04b99-9750-4b0a-bbc2-267251288134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/icons/pin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/main.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1353.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1353_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1362_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1566_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1700.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1700_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870_1x1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_6308.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_8220.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_8515.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section3/IMG_6605.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section4/_DSC1025.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section4/_DSC1131.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section5/IMG_8576.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section5/_DSC1037.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/imgs/section6/_YY_1183.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Title.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/Section6.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/Section7.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/SectionCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/SectionInfomation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/SectionMap.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/SectionPhotos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/IMG_0077.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/IMG_5016.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section1/IMG_5016.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/helper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section0.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section3.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section4.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section5.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section5.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/SectionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +77,7 @@
       <workItem from="1601700456845" duration="15647000" />
       <workItem from="1601727856597" duration="13819000" />
       <workItem from="1601822654520" duration="22895000" />
-      <workItem from="1602347009823" duration="9019000" />
+      <workItem from="1602347009823" duration="9928000" />
     </task>
     <servers />
   </component>

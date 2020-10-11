@@ -6,7 +6,7 @@ import mainImg from 'src/assets/imgs/main.jpg';
 export function SectionCard({ winHeight }: { winHeight: number }) {
   return (
     <SectionCardWrapper height={winHeight}>
-      <CardWrapper>
+      <CardWrapper height={winHeight}>
         <NameAndDate>
           <Name>유동균</Name>
           <Date>
@@ -24,7 +24,6 @@ export function SectionCard({ winHeight }: { winHeight: number }) {
         </Desc>
       </CardWrapper>
       <ScrollIndicator>
-        <div>스토리 보러 가기</div>
         <DownImgWrapper>
           <img
             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5Ij4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIvPgogICAgPC9nPgo8L3N2Zz4="
@@ -45,18 +44,19 @@ const SectionCardWrapper = styled.div<{ height: number }>`
   color: #333;
 `;
 
-const CardWrapper = styled.div`
+const CardWrapper = styled.div<{ height: number }>`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding-bottom: 100px;
+  justify-content: space-evenly;
+
+  min-height: ${({ height }) => height - 50}px;
+  padding-bottom: 25px;
   box-sizing: border-box;
 `;
 const NameAndDate = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 20px 25px;
+  padding: 10px 25px 8px;
   box-sizing: border-box;
 `;
 const Name = styled.div`
@@ -94,8 +94,8 @@ const Desc = styled.div`
   }
 `;
 const ScrollIndicator = styled.div`
-  position: absolute;
-  bottom: 15px;
+  position: relative;
+  bottom: 10px;
   width: 100%;
   text-align: center;
 
