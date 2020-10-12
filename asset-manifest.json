@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/wedding-card/static/css/main.19e06930.chunk.css",
-    "main.js": "/wedding-card/static/js/main.e044059b.chunk.js",
-    "main.js.map": "/wedding-card/static/js/main.e044059b.chunk.js.map",
+    "main.js": "/wedding-card/static/js/main.db9a039c.chunk.js",
+    "main.js.map": "/wedding-card/static/js/main.db9a039c.chunk.js.map",
     "runtime-main.js": "/wedding-card/static/js/runtime-main.ec87d863.js",
     "runtime-main.js.map": "/wedding-card/static/js/runtime-main.ec87d863.js.map",
     "static/css/2.abf99f95.chunk.css": "/wedding-card/static/css/2.abf99f95.chunk.css",
-    "static/js/2.d86ac7e2.chunk.js": "/wedding-card/static/js/2.d86ac7e2.chunk.js",
-    "static/js/2.d86ac7e2.chunk.js.map": "/wedding-card/static/js/2.d86ac7e2.chunk.js.map",
+    "static/js/2.87f9d217.chunk.js": "/wedding-card/static/js/2.87f9d217.chunk.js",
+    "static/js/2.87f9d217.chunk.js.map": "/wedding-card/static/js/2.87f9d217.chunk.js.map",
     "index.html": "/wedding-card/index.html",
-    "precache-manifest.b23c82e9cc6d8012a501d4ac413f502f.js": "/wedding-card/precache-manifest.b23c82e9cc6d8012a501d4ac413f502f.js",
+    "precache-manifest.5c89776edba8350e2331ac05399954ae.js": "/wedding-card/precache-manifest.5c89776edba8350e2331ac05399954ae.js",
     "service-worker.js": "/wedding-card/service-worker.js",
     "static/css/2.abf99f95.chunk.css.map": "/wedding-card/static/css/2.abf99f95.chunk.css.map",
     "static/css/main.19e06930.chunk.css.map": "/wedding-card/static/css/main.19e06930.chunk.css.map",
-    "static/js/2.d86ac7e2.chunk.js.LICENSE.txt": "/wedding-card/static/js/2.d86ac7e2.chunk.js.LICENSE.txt",
+    "static/js/2.87f9d217.chunk.js.LICENSE.txt": "/wedding-card/static/js/2.87f9d217.chunk.js.LICENSE.txt",
     "static/media/DSC1006.jpg": "/wedding-card/static/media/DSC1006.2afb4101.jpg",
     "static/media/DSC1006.webp": "/wedding-card/static/media/DSC1006.5862cba6.webp",
     "static/media/DSC1025.jpg": "/wedding-card/static/media/DSC1025.2dbb83ab.jpg",
@@ -62,8 +62,8 @@
   "entrypoints": [
     "static/js/runtime-main.ec87d863.js",
     "static/css/2.abf99f95.chunk.css",
-    "static/js/2.d86ac7e2.chunk.js",
+    "static/js/2.87f9d217.chunk.js",
     "static/css/main.19e06930.chunk.css",
-    "static/js/main.e044059b.chunk.js"
+    "static/js/main.db9a039c.chunk.js"
   ]
 }
