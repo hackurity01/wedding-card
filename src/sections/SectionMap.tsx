@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import LockIcon from '@material-ui/icons/Lock';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
@@ -24,11 +24,12 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export function SectionMap() {
+export const SectionMap = React.memo(() => {
   const [map, setMap] = useState<any>(null);
   const [lock, setLock] = useState<any>(false);
 
   useEffect(() => {
+    console.log('lock, map');
     if (map) map.setDraggable(lock);
   }, [lock, map]);
 
@@ -70,35 +71,32 @@ export function SectionMap() {
     };
   }, []);
 
+  const hadleInitMap = useCallback(() => {
+    const maps = window.kakao.maps;
+    map.setCenter(new maps.LatLng(36.7507405586091, 126.99229183249));
+    map.setLevel(4);
+  }, [map]);
+
+  const handleLock = useCallback(() => {
+    setLock(!lock);
+  }, []);
+
   const { icon, root } = useStyles();
   return (
     <SectionMapWrapper>
       <Title text={'오시는 길'} />
       <ButtonGroup>
-        <Button
-          classes={{ root }}
-          variant="outlined"
-          onClick={() => {
-            const maps = window.kakao.maps;
-            map.setCenter(new maps.LatLng(36.7507405586091, 126.99229183249));
-            map.setLevel(4);
-          }}>
+        <Button classes={{ root }} variant="outlined" onClick={hadleInitMap}>
           <RefreshIcon className={icon} />
         </Button>
-        <Button
-          style={{ marginLeft: 5 }}
-          classes={{ root }}
-          variant="outlined"
-          onClick={() => {
-            setLock(!lock);
-          }}>
+        <Button style={{ marginLeft: 5 }} classes={{ root }} variant="outlined" onClick={handleLock}>
           {lock ? <LockOpenIcon className={icon} /> : <LockIcon className={icon} />}
         </Button>
       </ButtonGroup>
       <div id={'map'} style={{ width: '100%', height: '210px' }} />
     </SectionMapWrapper>
   );
-}
+});
 
 const SectionMapWrapper = styled.section`
   max-width: 500px;

@@ -1,6 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import './App.css';
 import { SectionCard } from 'src/sections/SectionCard';
 import { Section1 } from 'src/sections/Section1';
 import { Section2 } from 'src/sections/Section2';
@@ -13,6 +13,8 @@ import { SectionPhotos } from 'src/sections/SectionPhotos';
 import { useScroll } from 'src/lib/useScroll';
 import { SectionMap } from 'src/sections/SectionMap';
 import { SectionInfomation } from 'src/sections/SectionInfomation';
+
+import './App.css';
 
 function App() {
   const winHeight = window.innerHeight;
@@ -36,14 +38,18 @@ function App() {
       <Section6 scrollTop={_scrollTop} />
       {/* 10400 ~ 14000 */}
       <Section7 scrollTop={_scrollTop} />
-      <div style={{ background: 'white' }}>
+      <BackgroundWhite>
         {/* 14000 ~ */}
-        <SectionPhotos scrollTop={_scrollTop - 13630 + 1200} />
+        <SectionPhotos scrollTop={_scrollTop - 13630 + 1200 > 0 ? _scrollTop - 13630 + 1200 : 0} />
         <SectionMap />
         <SectionInfomation />
-      </div>
+      </BackgroundWhite>
     </div>
   );
 }
+
+const BackgroundWhite = styled.div`
+  background: #fff;
+`;
 
 export default App;

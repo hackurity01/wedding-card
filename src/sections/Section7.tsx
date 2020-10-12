@@ -7,71 +7,75 @@ export function Section7({ scrollTop }: { scrollTop: number }) {
   return (
     <section style={{ position: 'relative' }}>
       <div style={{ height: '3300px' }}>
-        <div
-          style={{
-            position: 'sticky',
-            zIndex: -1,
-            top: '50%',
-            width: '100%',
-            marginBottom: '60px',
-            transform: 'translate(0, -50%)',
-          }}>
-          <div
-            style={{
-              color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 10400, 2000, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
-              marginBottom: 15,
-            }}>
-            힘든 시기지만
-          </div>
-          <div
-            style={{
-              color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 10700, 1600, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
-              marginBottom: 15,
-            }}>
-            작은 축복을 보태어 주시면
-          </div>
-          <div
-            style={{
-              color: 'white',
-              opacity: computedValueWithKeyframe(scrollTop, 11000, 1200, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
-              marginBottom: 15,
-            }}>
-            더없는 행복으로 간직하겠습니다
-          </div>
+        {10400 <= scrollTop && scrollTop <= 14000 && (
+          <>
+            <div
+              style={{
+                position: 'sticky',
+                zIndex: -1,
+                top: '50%',
+                width: '100%',
+                marginBottom: '60px',
+                transform: 'translate(0, -50%)',
+              }}>
+              <div
+                style={{
+                  color: 'white',
+                  opacity: computedValueWithKeyframe(scrollTop, 10400, 2000, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+                  marginBottom: 15,
+                }}>
+                힘든 시기지만
+              </div>
+              <div
+                style={{
+                  color: 'white',
+                  opacity: computedValueWithKeyframe(scrollTop, 10700, 1600, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+                  marginBottom: 15,
+                }}>
+                작은 축복을 보태어 주시면
+              </div>
+              <div
+                style={{
+                  color: 'white',
+                  opacity: computedValueWithKeyframe(scrollTop, 11000, 1200, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+                  marginBottom: 15,
+                }}>
+                더없는 행복으로 간직하겠습니다
+              </div>
 
-          <div
-            style={{
-              opacity: computedValueWithKeyframe(scrollTop, 11300, 800, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
-              marginBottom: 15,
-            }}>
-            <ShortHr />
-            <Table>
-              <tbody>
-                <Tr>
-                  <Td>
-                    <Parent>유영선</Parent>
-                    <Parent>오민애의</Parent>
-                  </Td>
-                  <Td>
-                    <Roll>차남</Roll>
-                    <Name>동균</Name>
-                  </Td>
-                </Tr>
-                <Tr>
-                  <Td>
-                    <Parent>한명자의</Parent>
-                  </Td>
-                  <Td>
-                    <Roll>차녀</Roll>
-                    <Name>한주</Name>
-                  </Td>
-                </Tr>
-              </tbody>
-            </Table>
-          </div>
-        </div>
+              <div
+                style={{
+                  opacity: computedValueWithKeyframe(scrollTop, 11300, 800, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
+                  marginBottom: 15,
+                }}>
+                <ShortHr />
+                <Table>
+                  <tbody>
+                    <Tr>
+                      <Td>
+                        <Parent>유영선</Parent>
+                        <Parent>오민애의</Parent>
+                      </Td>
+                      <Td>
+                        <Roll>차남</Roll>
+                        <Name>동균</Name>
+                      </Td>
+                    </Tr>
+                    <Tr>
+                      <Td>
+                        <Parent>한명자의</Parent>
+                      </Td>
+                      <Td>
+                        <Roll>차녀</Roll>
+                        <Name>한주</Name>
+                      </Td>
+                    </Tr>
+                  </tbody>
+                </Table>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

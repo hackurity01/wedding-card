@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-export function SectionInfomation() {
+export const SectionInfomation = React.memo(() => {
   return (
     <InformationWrapper>
       <InfoGroup>
@@ -55,7 +55,7 @@ export function SectionInfomation() {
       </InfoGroup>
     </InformationWrapper>
   );
-}
+});
 
 const InformationWrapper = styled.div`
   padding: 38px 30px 100px;

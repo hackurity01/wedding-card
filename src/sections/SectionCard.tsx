@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import mainImg from 'src/assets/imgs/main/main.jpg';
 import mainImgWebp from 'src/assets/imgs/main/main.webp';
 
-export function SectionCard({ winHeight }: { winHeight: number }) {
+export const SectionCard = React.memo(({ winHeight }: { winHeight: number }) => {
   return (
     <SectionCardWrapper height={winHeight}>
       <CardWrapper height={winHeight}>
@@ -38,7 +38,7 @@ export function SectionCard({ winHeight }: { winHeight: number }) {
       <GradientEnd />
     </SectionCardWrapper>
   );
-}
+});
 
 const SectionCardWrapper = styled.div<{ height: number }>`
   text-align: left;
