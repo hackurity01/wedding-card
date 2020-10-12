@@ -25,45 +25,47 @@ export const SectionCard = React.memo(({ winHeight }: { winHeight: number }) => 
 
   return (
     <SectionCardWrapper height={winHeight}>
-      <Transition in={isLoaded} timeout={duration}>
-        {state => (
-          <div
-            style={{
-              ...defaultStyle,
-              ...transitionStyles[state],
-            }}>
-            <CardWrapper height={winHeight}>
-              <NameAndDate>
-                <Name>유동균</Name>
-                <Date>
-                  <div>11</div>
-                  <div>28</div>
-                </Date>
-                <Name>이한주</Name>
-              </NameAndDate>
-              <ImgCard>
-                <picture onLoad={handleLoad}>
-                  <source srcSet={mainImgWebp} type="image/webp" />
-                  <img src={mainImg} alt="웨딩 사진" />
-                </picture>
-              </ImgCard>
-              <Desc>
-                <div>2020년 11월 28일 토요일 오후 1시 30분</div>
-                <div>아산 모나무르 아레나홀</div>
-              </Desc>
-            </CardWrapper>
-            <ScrollIndicator>
-              <DownImgWrapper>
-                <img
-                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5Ij4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIvPgogICAgPC9nPgo8L3N2Zz4="
-                  alt={'down'}
-                />
-              </DownImgWrapper>
-            </ScrollIndicator>
-            <GradientEnd />
-          </div>
-        )}
-      </Transition>
+      <OverflowHidden>
+        <Transition in={isLoaded} timeout={duration}>
+          {state => (
+            <div
+              style={{
+                ...defaultStyle,
+                ...transitionStyles[state],
+              }}>
+              <CardWrapper height={winHeight}>
+                <NameAndDate>
+                  <Name>유동균</Name>
+                  <Date>
+                    <div>11</div>
+                    <div>28</div>
+                  </Date>
+                  <Name>이한주</Name>
+                </NameAndDate>
+                <ImgCard>
+                  <picture onLoad={handleLoad}>
+                    <source srcSet={mainImgWebp} type="image/webp" />
+                    <img src={mainImg} alt="웨딩 사진" />
+                  </picture>
+                </ImgCard>
+                <Desc>
+                  <div>2020년 11월 28일 토요일 오후 1시 30분</div>
+                  <div>아산 모나무르 아레나홀</div>
+                </Desc>
+              </CardWrapper>
+              <ScrollIndicator>
+                <DownImgWrapper>
+                  <img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5Ij4KICAgIDxnPgogICAgICAgIDxwYXRoIGQ9Im00MC40LDEyMS4zYy0wLjgsMC44LTEuOCwxLjItMi45LDEuMnMtMi4xLTAuNC0yLjktMS4yYy0xLjYtMS42LTEuNi00LjIgMC01LjhsNTEtNTEtNTEtNTFjLTEuNi0xLjYtMS42LTQuMiAwLTUuOCAxLjYtMS42IDQuMi0xLjYgNS44LDBsNTMuOSw1My45YzEuNiwxLjYgMS42LDQuMiAwLDUuOGwtNTMuOSw1My45eiIvPgogICAgPC9nPgo8L3N2Zz4="
+                    alt={'down'}
+                  />
+                </DownImgWrapper>
+              </ScrollIndicator>
+            </div>
+          )}
+        </Transition>
+      </OverflowHidden>
+      <GradientEnd />
     </SectionCardWrapper>
   );
 });
@@ -74,9 +76,11 @@ const SectionCardWrapper = styled.div<{ height: number }>`
   height: ${({ height }) => height}px;
   position: relative;
   color: #333;
-  overflow: hidden;
 `;
 
+const OverflowHidden = styled.div`
+  overflow: hidden;
+`;
 const CardWrapper = styled.div<{ height: number }>`
   display: flex;
   flex-direction: column;
