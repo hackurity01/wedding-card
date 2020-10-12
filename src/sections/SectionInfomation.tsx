@@ -53,6 +53,17 @@ export const SectionInfomation = React.memo(() => {
         <Desc>351번(행목2리)</Desc>
         <Desc>352번(창암1리행)</Desc>
       </InfoGroup>
+      <InfoGroup>
+        <Title>셔틀버스</Title>
+        <Desc>
+          <span style={{ fontWeight: 600 }}>12:30</span> (천안아산 KTX역 → 모나무르)
+        </Desc>
+        <Desc>천안아산역 3번 출구 앞 버스정류장에서 탑승</Desc>
+        <Desc>
+          <span style={{ fontWeight: 600 }}>15:00</span> (모나무르 → 천안아산 KTX역)
+        </Desc>
+        <Desc>모나무르 제 2주차장에서 탑승</Desc>
+      </InfoGroup>
     </InformationWrapper>
   );
 });

@@ -70,7 +70,7 @@ export function Section6({ scrollTop }: { scrollTop: number }) {
                     'easeInOutQuad'
                   ),
                 }}>
-                서로와의 평생을 약속하려 합니다
+                서로와의 평생을 약속하려 합니다.
               </div>
             </div>
           </>

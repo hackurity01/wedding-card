@@ -83,7 +83,7 @@ export function Section5({ scrollTop }: { scrollTop: number }) {
                       'easeInOutQuad'
                     ),
                   }}
-                  text={<>되어 주었습니다</>}
+                  text={<>되어주었습니다.</>}
                 />
               </div>
               <div

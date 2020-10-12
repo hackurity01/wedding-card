@@ -24,7 +24,6 @@ import _YY_1535 from 'src/assets/imgs/photos/YY_1535.jpg';
 import _YY_1779 from 'src/assets/imgs/photos/YY_1779.jpg';
 import _YY_1870 from 'src/assets/imgs/photos/YY_1870.jpg';
 import _YY_1566 from 'src/assets/imgs/photos/YY_1566.jpg';
-import _YY_2167 from 'src/assets/imgs/photos/YY_2167.jpg';
 import styled from 'styled-components';
 import { usePreloadImages } from 'src/lib/usePreloadImages';
 
@@ -87,11 +86,6 @@ export const SectionPhotos = React.memo(
         src: _YY_1870,
         w: 4962,
         h: 3308,
-      },
-      {
-        src: _YY_2167,
-        w: 4975,
-        h: 3317,
       },
     ];
 

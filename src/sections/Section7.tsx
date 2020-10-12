@@ -40,7 +40,7 @@ export function Section7({ scrollTop }: { scrollTop: number }) {
                   opacity: computedValueWithKeyframe(scrollTop, 11000, 1200, { 0: 0, 35: 1, 100: 1 }, 'easeInOutQuad'),
                   marginBottom: 15,
                 }}>
-                더없는 행복으로 간직하겠습니다
+                더없는 행복으로 간직하겠습니다.
               </div>
 
               <div
