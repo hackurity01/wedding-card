@@ -1,7 +1,7 @@
 {
   "name": "wedding-card",
   "version": "0.1.0",
-  "homepage": "https://hackurity01.github.io",
+  "homepage": "https://hackurity01.github.io/wedding-card",
   "private": true,
   "dependencies": {
     "@egjs/react-flicking": "^3.3.1",
@@ -25,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
