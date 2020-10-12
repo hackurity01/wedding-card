@@ -1,7 +1,7 @@
 {
   "name": "wedding-card",
   "version": "0.1.0",
-  "homepage": "https://hackurity01.github.io/wedding-card/",
+  "homepage": "https://hackurity01.github.io",
   "private": true,
   "dependencies": {
     "@egjs/react-flicking": "^3.3.1",

@@ -3,8 +3,8 @@ import React from 'react';
 import { computedValueWithKeyframe } from 'src/lib/helper';
 import { Picture } from 'src/components/Picture';
 
-import _YY_1183 from 'src/assets/imgs/photos/_YY_1183.jpg';
-import _YY_1183_webp from 'src/assets/imgs/photos/_YY_1183.webp';
+import _YY_1183 from 'src/assets/imgs/section6/_YY_1183.jpg';
+import _YY_1183_webp from 'src/assets/imgs/section6/_YY_1183.webp';
 
 export function Section6({ scrollTop }: { scrollTop: number }) {
   return (
