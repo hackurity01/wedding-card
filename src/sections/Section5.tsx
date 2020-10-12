@@ -8,8 +8,11 @@ import _DSC1037 from 'src/assets/imgs/section5/DSC1037.jpg';
 import _DSC1037_webp from 'src/assets/imgs/section5/DSC1037.webp';
 import IMG_7516 from 'src/assets/imgs/section5/IMG_7516.jpg';
 import IMG_7516_webp from 'src/assets/imgs/section5/IMG_7516.webp';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 export function Section5({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([_DSC1037_webp, IMG_7516_webp]);
+
   return (
     <section>
       <div style={{ height: '1800px' }}>

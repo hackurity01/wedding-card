@@ -7,8 +7,11 @@ import _DSC1133_webp from 'src/assets/imgs/section4/DSC1133.webp';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
 import { Picture } from 'src/components/Picture';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 export function Section4({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([_DSC1025_webp, _DSC1133_webp]);
+
   return (
     <section>
       <div style={{ height: '1600px' }}>

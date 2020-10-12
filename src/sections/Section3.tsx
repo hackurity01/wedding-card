@@ -6,8 +6,11 @@ import { Picture } from 'src/components/Picture';
 
 import IMG_6605 from 'src/assets/imgs/section3/IMG_6605.jpg';
 import IMG_6605_webp from 'src/assets/imgs/section3/IMG_6605.webp';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 export function Section3({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([IMG_6605_webp]);
+
   return (
     <section>
       <div style={{ height: '1600px' }}>

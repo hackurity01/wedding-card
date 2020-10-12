@@ -64,3 +64,10 @@ export const EasingFunctions: any = {
   easeInOutQuint: (t: number) => (t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t),
   intFloor: (t: number) => Math.floor(t),
 };
+
+export function preloadImages(images: string[]) {
+  for (const image of images) {
+    const img = new Image();
+    img.src = image;
+  }
+}

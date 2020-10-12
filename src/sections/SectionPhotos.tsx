@@ -26,9 +26,19 @@ import _YY_1870 from 'src/assets/imgs/photos/YY_1870.jpg';
 import _YY_1566 from 'src/assets/imgs/photos/YY_1566.jpg';
 import _YY_2167 from 'src/assets/imgs/photos/YY_2167.jpg';
 import styled from 'styled-components';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 export const SectionPhotos = React.memo(
   ({ scrollTop }: { scrollTop: number }) => {
+    usePreloadImages([
+      _YY_1183_1x1_webp,
+      _YY_1353_1x1_webp,
+      _YY_1535_1x1_webp,
+      _YY_1779_1x1_webp,
+      _YY_1870_1x1_webp,
+      _YY_1566_1x1_webp,
+    ]);
+
     const [isGalleryOpened, setIsGalleryOpened] = useState<boolean>(false);
     const [galleryOption, setGalleryOption] = useState<any>({
       closeOnScroll: false,

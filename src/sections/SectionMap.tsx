@@ -29,7 +29,6 @@ export const SectionMap = React.memo(() => {
   const [lock, setLock] = useState<any>(false);
 
   useEffect(() => {
-    console.log('lock, map');
     if (map) map.setDraggable(lock);
   }, [lock, map]);
 
@@ -79,7 +78,7 @@ export const SectionMap = React.memo(() => {
 
   const handleLock = useCallback(() => {
     setLock(!lock);
-  }, []);
+  }, [lock]);
 
   const { icon, root } = useStyles();
   return (

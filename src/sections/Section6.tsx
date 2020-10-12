@@ -5,8 +5,11 @@ import { Picture } from 'src/components/Picture';
 
 import _YY_1183 from 'src/assets/imgs/section6/YY_1183.jpg';
 import _YY_1183_webp from 'src/assets/imgs/section6/YY_1183.webp';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 export function Section6({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([_YY_1183_webp]);
+
   return (
     <section>
       <div style={{ height: '1800px' }}>

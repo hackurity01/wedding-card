@@ -3,6 +3,7 @@ import React from 'react';
 import { Picture } from 'src/components/Picture';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 import hanjoo from 'src/assets/imgs/section1/hanjoo.jpg';
 import hanjoo_webp from 'src/assets/imgs/section1/hanjoo.webp';
@@ -10,6 +11,8 @@ import IMG_8972 from 'src/assets/imgs/section1/IMG_8972.jpg';
 import IMG_8972_webp from 'src/assets/imgs/section1/IMG_8972.webp';
 
 export function Section1({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([hanjoo_webp, IMG_8972_webp]);
+
   return (
     <section>
       <div style={{ height: '700px' }}>

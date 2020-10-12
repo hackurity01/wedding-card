@@ -3,6 +3,7 @@ import React from 'react';
 import { Picture } from 'src/components/Picture';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
+import { usePreloadImages } from 'src/lib/usePreloadImages';
 
 import IMG_6308 from 'src/assets/imgs/section2/IMG_6308.jpg';
 import IMG_6308_webp from 'src/assets/imgs/section2/IMG_6308.webp';
@@ -12,6 +13,7 @@ import IMG_2480 from 'src/assets/imgs/section2/IMG_2480.jpg';
 import IMG_2480_webp from 'src/assets/imgs/section2/IMG_2480.webp';
 
 export function Section2({ scrollTop }: { scrollTop: number }) {
+  usePreloadImages([IMG_6308_webp, _DSC1006_webp, IMG_2480_webp]);
   return (
     <section>
       <div style={{ height: '1100px' }}>
