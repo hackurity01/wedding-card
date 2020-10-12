@@ -16,7 +16,7 @@ export function Section1({ scrollTop }: { scrollTop: number }) {
   return (
     <section>
       <div style={{ height: '700px' }}>
-        {0 <= scrollTop && scrollTop <= 2100 && (
+        {-200 <= scrollTop && scrollTop <= 2100 && (
           <Text
             text={'4년 전, 겨울'}
             style={{

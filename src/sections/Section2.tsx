@@ -17,7 +17,7 @@ export function Section2({ scrollTop }: { scrollTop: number }) {
   return (
     <section>
       <div style={{ height: '1100px' }}>
-        {2100 <= scrollTop && scrollTop <= 3900 && (
+        {1900 <= scrollTop && scrollTop <= 3900 && (
           <>
             <div
               className={'boxShadow'}
