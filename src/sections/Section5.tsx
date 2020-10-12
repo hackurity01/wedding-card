@@ -4,8 +4,8 @@ import { computedValueWithKeyframe } from 'src/lib/helper';
 import { Picture } from 'src/components/Picture';
 import { Text } from 'src/components/Text';
 
-import _DSC1037 from 'src/assets/imgs/section5/_DSC1037.jpg';
-import _DSC1037_webp from 'src/assets/imgs/section5/_DSC1037.webp';
+import _DSC1037 from 'src/assets/imgs/section5/DSC1037.jpg';
+import _DSC1037_webp from 'src/assets/imgs/section5/DSC1037.webp';
 import IMG_7516 from 'src/assets/imgs/section5/IMG_7516.jpg';
 import IMG_7516_webp from 'src/assets/imgs/section5/IMG_7516.webp';
 

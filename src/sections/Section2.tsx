@@ -6,8 +6,8 @@ import { computedValueWithKeyframe } from 'src/lib/helper';
 
 import IMG_6308 from 'src/assets/imgs/section2/IMG_6308.jpg';
 import IMG_6308_webp from 'src/assets/imgs/section2/IMG_6308.webp';
-import _DSC1006 from 'src/assets/imgs/section2/_DSC1006.jpg';
-import _DSC1006_webp from 'src/assets/imgs/section2/_DSC1006.webp';
+import _DSC1006 from 'src/assets/imgs/section2/DSC1006.jpg';
+import _DSC1006_webp from 'src/assets/imgs/section2/DSC1006.webp';
 import IMG_2480 from 'src/assets/imgs/section2/IMG_2480.jpg';
 import IMG_2480_webp from 'src/assets/imgs/section2/IMG_2480.webp';
 

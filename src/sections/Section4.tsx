@@ -1,9 +1,9 @@
 import React from 'react';
 
-import _DSC1025 from 'src/assets/imgs/section4/_DSC1025.jpg';
-import _DSC1025_webp from 'src/assets/imgs/section4/_DSC1025.webp';
-import _DSC1133 from 'src/assets/imgs/section4/_DSC1133.jpg';
-import _DSC1133_webp from 'src/assets/imgs/section4/_DSC1133.webp';
+import _DSC1025 from 'src/assets/imgs/section4/DSC1025.jpg';
+import _DSC1025_webp from 'src/assets/imgs/section4/DSC1025.webp';
+import _DSC1133 from 'src/assets/imgs/section4/DSC1133.jpg';
+import _DSC1133_webp from 'src/assets/imgs/section4/DSC1133.webp';
 import { Text } from 'src/components/Text';
 import { computedValueWithKeyframe } from 'src/lib/helper';
 import { Picture } from 'src/components/Picture';
