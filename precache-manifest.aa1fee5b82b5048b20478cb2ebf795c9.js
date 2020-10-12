@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13eb1c2b2f129f9dbf3583effa84b6e6",
+    "revision": "dc0368493045a95e1c64615d0f60ac5d",
     "url": "/wedding-card/index.html"
   },
   {
-    "revision": "231e36e9ec1db208d95c",
+    "revision": "ae1b8798446741c9653b",
     "url": "/wedding-card/static/css/2.abf99f95.chunk.css"
   },
   {
-    "revision": "bf2d810168d1f23e6e6d",
+    "revision": "9995559f5e58bab131d4",
     "url": "/wedding-card/static/css/main.19e06930.chunk.css"
   },
   {
-    "revision": "231e36e9ec1db208d95c",
-    "url": "/wedding-card/static/js/2.07685fa7.chunk.js"
+    "revision": "ae1b8798446741c9653b",
+    "url": "/wedding-card/static/js/2.0d993bba.chunk.js"
   },
   {
     "revision": "c068feb8883570faba07032f3eaaccdf",
-    "url": "/wedding-card/static/js/2.07685fa7.chunk.js.LICENSE.txt"
+    "url": "/wedding-card/static/js/2.0d993bba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf2d810168d1f23e6e6d",
-    "url": "/wedding-card/static/js/main.b34513a5.chunk.js"
+    "revision": "9995559f5e58bab131d4",
+    "url": "/wedding-card/static/js/main.4829fecb.chunk.js"
   },
   {
     "revision": "cccf477c6f1b8f141b67",
@@ -178,10 +178,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6bb47358d17f48794a0525b4488b7b46",
     "url": "/wedding-card/static/media/YY_1870_1x1.6bb47358.jpg"
-  },
-  {
-    "revision": "3c348702fd6f2be15f8c87370b50e01c",
-    "url": "/wedding-card/static/media/YY_2167.3c348702.jpg"
   },
   {
     "revision": "b257fa9c5ac8c515ac4d77a667ce2943",

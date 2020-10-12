@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/wedding-card/static/css/main.19e06930.chunk.css",
-    "main.js": "/wedding-card/static/js/main.b34513a5.chunk.js",
-    "main.js.map": "/wedding-card/static/js/main.b34513a5.chunk.js.map",
+    "main.js": "/wedding-card/static/js/main.4829fecb.chunk.js",
+    "main.js.map": "/wedding-card/static/js/main.4829fecb.chunk.js.map",
     "runtime-main.js": "/wedding-card/static/js/runtime-main.ec87d863.js",
     "runtime-main.js.map": "/wedding-card/static/js/runtime-main.ec87d863.js.map",
     "static/css/2.abf99f95.chunk.css": "/wedding-card/static/css/2.abf99f95.chunk.css",
-    "static/js/2.07685fa7.chunk.js": "/wedding-card/static/js/2.07685fa7.chunk.js",
-    "static/js/2.07685fa7.chunk.js.map": "/wedding-card/static/js/2.07685fa7.chunk.js.map",
+    "static/js/2.0d993bba.chunk.js": "/wedding-card/static/js/2.0d993bba.chunk.js",
+    "static/js/2.0d993bba.chunk.js.map": "/wedding-card/static/js/2.0d993bba.chunk.js.map",
     "index.html": "/wedding-card/index.html",
-    "precache-manifest.51c9235b819651860a33b95772bac502.js": "/wedding-card/precache-manifest.51c9235b819651860a33b95772bac502.js",
+    "precache-manifest.aa1fee5b82b5048b20478cb2ebf795c9.js": "/wedding-card/precache-manifest.aa1fee5b82b5048b20478cb2ebf795c9.js",
     "service-worker.js": "/wedding-card/service-worker.js",
     "static/css/2.abf99f95.chunk.css.map": "/wedding-card/static/css/2.abf99f95.chunk.css.map",
     "static/css/main.19e06930.chunk.css.map": "/wedding-card/static/css/main.19e06930.chunk.css.map",
-    "static/js/2.07685fa7.chunk.js.LICENSE.txt": "/wedding-card/static/js/2.07685fa7.chunk.js.LICENSE.txt",
+    "static/js/2.0d993bba.chunk.js.LICENSE.txt": "/wedding-card/static/js/2.0d993bba.chunk.js.LICENSE.txt",
     "static/media/DSC1006.jpg": "/wedding-card/static/media/DSC1006.2afb4101.jpg",
     "static/media/DSC1006.webp": "/wedding-card/static/media/DSC1006.5862cba6.webp",
     "static/media/DSC1025.jpg": "/wedding-card/static/media/DSC1025.2dbb83ab.jpg",
@@ -51,7 +51,6 @@
     "static/media/YY_1870.jpg": "/wedding-card/static/media/YY_1870.dfd1bdea.jpg",
     "static/media/YY_1870_1x1.webp": "/wedding-card/static/media/YY_1870_1x1.029c4674.webp",
     "static/media/YY_1870_1x1.jpg": "/wedding-card/static/media/YY_1870_1x1.6bb47358.jpg",
-    "static/media/YY_2167.jpg": "/wedding-card/static/media/YY_2167.3c348702.jpg",
     "static/media/photoswipe.css": "/wedding-card/static/media/default-skin.b257fa9c.svg",
     "static/media/hanjoo.webp": "/wedding-card/static/media/hanjoo.337247d2.webp",
     "static/media/hanjoo.jpg": "/wedding-card/static/media/hanjoo.cc710c6f.jpg",
@@ -62,8 +61,8 @@
   "entrypoints": [
     "static/js/runtime-main.ec87d863.js",
     "static/css/2.abf99f95.chunk.css",
-    "static/js/2.07685fa7.chunk.js",
+    "static/js/2.0d993bba.chunk.js",
     "static/css/main.19e06930.chunk.css",
-    "static/js/main.b34513a5.chunk.js"
+    "static/js/main.4829fecb.chunk.js"
   ]
 }
