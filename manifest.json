@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "한주와 동균이의 모바일 청첩장",
+  "name": "한주와 동균이의 결혼식에 초대합니다.",
   "icons": [
     {
       "src": "favicon.ico",
