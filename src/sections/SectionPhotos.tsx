@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import 'react-photoswipe/lib/photoswipe.css';
 import { PhotoSwipe } from 'react-photoswipe';
+import 'react-photoswipe/lib/photoswipe.css';
+
+import { computedValueWithKeyframe } from 'src/lib/helper';
+import { Title } from 'src/components/Title';
+import { Picture } from 'src/components/Picture';
 
 import _YY_1183_1x1 from 'src/assets/imgs/photos/_YY_1183_1x1.jpg';
 import _YY_1183_1x1_webp from 'src/assets/imgs/photos/_YY_1183_1x1.webp';
@@ -22,9 +26,6 @@ import _YY_1870 from 'src/assets/imgs/photos/_YY_1870.jpg';
 import _YY_1566 from 'src/assets/imgs/photos/_YY_1566.jpg';
 import _YY_2167 from 'src/assets/imgs/photos/_YY_2167.jpg';
 import styled from 'styled-components';
-import { computedValueWithKeyframe } from 'src/lib/helper';
-import { Title } from 'src/components/Title';
-import { Picture } from 'src/components/Picture';
 
 export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
   const [isGalleryOpened, setIsGalleryOpened] = useState<boolean>(false);
@@ -93,7 +94,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
       <PhotosGrid>
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[0]}
+          jpg={photos_1x1[0]}
           webp={photos_1x1_webp[0]}
           alt={'이미지 0'}
           style={{
@@ -111,7 +112,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
         />
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[1]}
+          jpg={photos_1x1[1]}
           webp={photos_1x1_webp[1]}
           alt={'이미지 1'}
           style={{
@@ -129,7 +130,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
         />
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[2]}
+          jpg={photos_1x1[2]}
           webp={photos_1x1_webp[2]}
           alt={'이미지 2'}
           style={{
@@ -147,7 +148,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
         />
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[3]}
+          jpg={photos_1x1[3]}
           webp={photos_1x1_webp[3]}
           alt={'이미지 3'}
           style={{
@@ -165,7 +166,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
         />
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[4]}
+          jpg={photos_1x1[4]}
           webp={photos_1x1_webp[4]}
           alt={'이미지 4'}
           style={{
@@ -183,7 +184,7 @@ export function SectionPhotos({ scrollTop }: { scrollTop: number }) {
         />
         <Picture
           className={'boxShadow'}
-          jpg={photos_1x1_webp[5]}
+          jpg={photos_1x1[5]}
           webp={photos_1x1_webp[5]}
           alt={'이미지 5'}
           style={{
@@ -233,14 +234,4 @@ const PhotosGrid = styled.div`
   & img {
     width: 106%;
   }
-`;
-
-const BtnMore = styled.button`
-  width: 80%;
-  margin-top: 40px;
-  padding: 15px 35px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  font-size: 1rem;
-  background: none;
-  outline: none;
 `;

@@ -11,48 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8d04b99-9750-4b0a-bbc2-267251288134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Picture.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/main.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/main/main.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1183_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1353.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1353_1x1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1362.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1362.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1362_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1362_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1535_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1566.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1566.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1566_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1566_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1700_1x1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1779_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870_1x1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_1870_1x1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_2167.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/photos/_YY_2167.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section1/IMG_5016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_6308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_6308.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_8220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section2/IMG_8515.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section3/IMG_6605.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section3/IMG_6605.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section4/_DSC1025.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section4/_DSC1025.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section4/_DSC1131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section5/IMG_8576.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section5/_DSC1037.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section5/_DSC1037.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/imgs/section6/_YY_1183.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/imgs/section6/_YY_1183.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section1.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section3.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section3.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Section4.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section4.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section5.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section5.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section6.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section6.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Section7.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Section7.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/SectionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/SectionInfomation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionInfomation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/SectionMap.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionMap.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/SectionPhotos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionPhotos.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +78,7 @@
       <workItem from="1601700456845" duration="15647000" />
       <workItem from="1601727856597" duration="13819000" />
       <workItem from="1601822654520" duration="22895000" />
-      <workItem from="1602347009823" duration="18430000" />
+      <workItem from="1602347009823" duration="18644000" />
     </task>
     <servers />
   </component>
